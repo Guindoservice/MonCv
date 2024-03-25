@@ -1,0 +1,27 @@
+body{
+   
+}
+.container{
+    width: auto;
+    color: blanchedalmond;
+}
+.section1{
+    background-image: url("back.png");
+    background-repeat: no-repeat;
+    padding: 8px;
+   
+    position: relative;
+}
+.Etêtgauche{
+  
+}
+P{
+    padding-top: 10px;
+    font-size: 20PX;
+}
+.photo{
+
+}
+img{
+    border-radius: 7PX;
+}
