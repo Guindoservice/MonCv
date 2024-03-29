@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    margin: 0px;
+}
+body{
+   background: scroll; 
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+     /* flex-flow: row; */
+     background-color: blueviolet;
+     background-image: url(image/back.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+       
+}
+.entetegauche{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: 'inter', sans-serif;
+}
+.entetegauche .contact{
+    font-size: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+.contact .email{
+    margin-left: 16px;
+}
+
+.entetedroit{
+    
+}
+.entetedroit .photo{
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.photo img{
+    border-radius: 10px;
+}
