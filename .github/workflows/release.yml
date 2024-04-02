@@ -1,16 +1,17 @@
-name: Release & publish to NPM
-on: workflow_dispatch
-job: 
-  release: 
-    run-on : ubuntu-29.04
-    seteps:
-     - name: checkout source code
-       uses: actions/checkout@02
-     - name: Install the dependenceies
-       run: npm ci
-     - name: End message
-       run : echo 'All done!'
+name: projetCV
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
+jobs:
+  build:
 
+    runs-on: ubuntu-latest
 
+    steps:
+    - name: installation 
+      run: echo 'install dependencies'
+    
