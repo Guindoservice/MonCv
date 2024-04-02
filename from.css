@@ -1,14 +1,19 @@
 body{ 
-  background-color: rgb(245, 250, 250);
+  background-color: #f5fafa;
   font-family: 'inter', sans-serif;
 }
 .container{
-  background: hsl(0, 0%, 100%) ;
+  background: var(--couleur-pricipale);
   margin: auto;
   width: auto;
-  
-   
 }
+/* variable d ecouleur */
+:root {
+  --couleur-pricipale: #f5fafa;
+  --couleur-entete:  #5205cf;
+  --size-entet: 20px;
+  --text-color: black;
+ }
 @media  screen and (max-width: 1499px) {
   /* For desktop: */
   .container{
@@ -33,15 +38,17 @@ body{
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: space-around;
-  color: aliceblue;
+  color: var(--couleur-pricipale);
   background-image: url(image/back.png);
+  background-color:var(--couleur-entete);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #5205cf;
+ 
+  var:var(--couleur-entete);
   margin-bottom: 20px;
 }
 .Etêtgauche{
-  font-size: 20PX;
+  font-size: 20px;
   width: auto;
   height: 230px;
 }
@@ -69,12 +76,12 @@ img{
   width: 100%;
   height: 50px;
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   border-radius: 5px;
  
 }
 .profil h3{ 
-  color: black;
+  color: var(--text-color);
   text-align: center;
   font-size: 25px;
   margin: 10px
@@ -82,7 +89,7 @@ img{
 }
 .profiltext{
  
-  color: black;
+  color: var(--text-color);
   width: 100%;
   text-align: center;
   margin: auto;
@@ -91,7 +98,7 @@ img{
 .content{
   width: 100%;
   margin-right: 20px;
-  color: black;
+  color: var(--text-color);
   display: flex; 
   margin-bottom: 20px;
 }
@@ -104,7 +111,7 @@ img{
 }
 /* couleur des sous titre  */
 .exf{
-  color: #ac04ce;
+  color:var(--couleur-entete);
 }
 /* la base de la bar de prgression */
 .bar{
@@ -112,7 +119,7 @@ img{
   background: #353b48;
   display: block;
   height: 15px;
-  border: 1px solid, rgba(0, 0, 0, 0.3);
+  border: 1px solid, var(--text-color);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -122,7 +129,7 @@ img{
 .bar span{
   height: 15px;
   float: left;
-  background: #ac04ce;
+  background:var(--couleur-entete);
 }
 
 /* la seconde couleur de la bar de progression des langues */
@@ -175,7 +182,7 @@ img{
 /* la partie interet */
 .loisir{
   width: 100%;
-  color: black;
+  color: var(--text-color);
   display: flex;
 }
 .interet{
@@ -193,7 +200,7 @@ img{
 /* les trait verticales */
 .lign{
   margin-top: 20px;
-  background-color: #ac04ce;
+  background-color:var(--couleur-entete);
   width: 2px;
   height: 240px;
   
